@@ -1,7 +1,7 @@
 ---
 hero:
-  title: Library Name
-  desc: dumi library site example
+  title: ami-ui
+  desc: light easy use
   actions:
     - text: Getting Started
       link: /components
@@ -15,7 +15,7 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: Feature 3
     desc: Balabala
-footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
+footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [ami](https://chanlumin.github.io)
 ---
 
-## Hello dumi!
+## Hello ami-ui!
