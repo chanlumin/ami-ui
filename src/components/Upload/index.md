@@ -1,4 +1,4 @@
-## Upload
+## 上传
 
 Demo:
 
@@ -6,7 +6,22 @@ Demo:
 import React from 'react';
 import { Upload } from 'ami';
 
-export default () => <Upload title="Upload" />;
-```
+const handleSuccess = (data, file) => {
+  console.log('success', data, file);
+};
+const handleError = (err, file) => {
+  console.error('error...', err, file);
+};
+const handleProgress = (percentage, file) => {
+  console.log(`progress...%${percentage}`, file);
+};
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+export default () => (
+  <Upload
+    action="/api/posts"
+    onSuccess={handleSuccess}
+    onError={handleError}
+    onProgress={handleProgress}
+  />
+);
+```
