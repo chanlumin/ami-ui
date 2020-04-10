@@ -1,10 +1,4 @@
----
-nav:
-  title: Components
-  path: /components
----
-
-## Foo
+## Button
 
 Demo:
 
