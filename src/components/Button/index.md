@@ -4,7 +4,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'ami';
+import { Button } from 'ami';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Button title="First Demo" />;
 ```
