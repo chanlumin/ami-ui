@@ -39,7 +39,7 @@ const Button: ButtonTypeProps = ({ ...props }) => {
     type,
     shape,
     size,
-    loading,
+    // loading,
     prefixCls,
     className,
     ghost,
@@ -47,7 +47,17 @@ const Button: ButtonTypeProps = ({ ...props }) => {
     block,
     children,
   } = props;
-  // const classes = classNames()
+  // 'btn' 'className'
+  // [prop] 计算属性
+  const classes = classNames(prefixCls, className, {
+    [`${prefixCls}-${type}`]: type,
+    [`${prefixCls}-${size}`]: size,
+    [`${prefixCls}-${shape}`]: shape,
+    // [`${prefixCls}-loading`]: loading,
+    [`${prefixCls}-backgorund-ghost`]: ghost,
+    [`${prefixCls}-block`]: block,
+    [`${prefixCls}-dangerous`]: !!danger,
+  });
 
   return <div>'button'</div>;
 };
